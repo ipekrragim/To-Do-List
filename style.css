@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}          
+
+.container{
+    width:40%;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px 10px 0 0;
+    text-align: center;  
+}
+.heading{
+    width: 100%;
+    height: 1.85rem;
+    border-radius: 10px 10px 0 0;
+    background-color: yellow;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.3rem;
+}
+h1{
+    margin-top: 0.9rem;
+}
+.filter {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+}
+#filter-icon-down {
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+}
+#filter-icon-down:hover{
+    color: black;
+}
+#filter-icon-up{
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+    display: none;
+}
+#filter-icon-up:hover{
+    color: black;
+}
+.input-del-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0.9rem;
+    width: 80%;
+}
+ #input{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;  
+    padding: 0.9rem 3rem 0.9rem 0.3rem;
+    font-size: 1.2rem;
+}
+.deleteBtnInp{
+   border-radius: 50%;
+   width: 1.5rem;
+   height: 1.5rem;
+   border: 1px solid #888;
+  color: #888;
+  cursor: pointer;
+  margin-left: -2.5rem;
+
+}
+.deleteBtnInp:hover{
+    background-color:  rgb(131,58,224);
+    color: white;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.add {
+    display: flex;
+    padding:0.9rem 3.1rem;
+    color: white;
+    background-color: rgb(131,58,224);
+    border: none;
+    cursor: pointer;
+    margin: 1.25rem 0;
+    position: relative;
+    border-radius: 2.5rem;
+    font-size: 1.25rem;
+}
+.add:hover{
+    background-color:rgb(160, 90, 246);
+}
+#plusicon {
+    width: 2.8rem;
+    height: 3.125rem;
+    background-color: rgb(153,83,241);
+    color: white; 
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+#plusicon:hover{
+    background-color: rgb(170, 113, 239);
+}
+.listcontainer{
+    width: 77%;
+    border: 1px solid #ccc;
+    border-radius: 10px;  
+    font-size: 1.2rem;
+    max-height: 200px; 
+    overflow-y: auto;
+    display: none;
+ }
+#list {
+    list-style-type: none;
+    padding:0.1rem;
+    margin-top: 0.5rem;
+}
+#list li {
+    border-radius: 5px;
+    padding: 0.1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    
+}
+#list li .item-content{
+    width: 80%;
+    word-break: break-all;
+    text-align: left;  
+}
+.delete-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius:50%;
+    border: 1px solid #888;
+   color: #888;
+   cursor: pointer; 
+}
+.delete-btn:hover{
+    background-color:  rgb(131,58,224);
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    h1{
+     font-size: 1rem
+    }
+    #filter-icon-down {
+        font-size: smaller;
+    }
+    #filter-icon-up {
+        font-size: smaller;
+    }
+    #input{
+        font-size: 1rem;
+        padding: 0.5rem 2.3rem 0.5rem 0.5rem;
+          }
+    .input-del-container {
+        margin: 0.4rem;
+    }
+    .deleteBtnInp{
+        width: 1.2rem;
+        height: 1.2rem;
+     }
+    .add {
+        padding:0.6rem 1.8rem;
+        font-size: 0.8rem;
+    }
+    #plusicon {
+        width: 1.7rem;
+        height: 2.1rem;
+        font-size: 0.8rem;
+    }
+    #list li .item-content{
+        font-size: 0.7rem;
+    }
+    .delete-btn {
+        width: 1rem;
+        height: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1{
+     font-size: 0.8rem
+    }
+    #filter-icon-down {
+      font-size: x-small;
+    }
+    #filter-icon-up {
+       font-size: x-small;
+    }
+    #input{
+  font-size: 0.7rem;
+  padding: 0.3rem 2rem 0.3rem 0.5rem;
+    }
+    .deleteBtnInp{
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-left: -1.5rem;
+  font-size: 0.5rem;
+     }
+     .add {
+        padding:0.4rem 1.1rem;
+        font-size: 0.5rem;
+    }
+    #plusicon {
+        width: 1rem;
+        height: 1.37rem;
+        font-size: 0.5rem;
+    }
+    #list li .item-content{
+        font-size: 0.5rem;
+    }
+    .delete-btn {
+        width: 0.8rem;
+        height: 0.8rem;
+        font-size: 0.5rem;
+        margin-left: 0.3rem;
+    }
+ 
+}
+
