@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Roboto", sans-serif;
 }          
 
 .container{
@@ -33,7 +35,7 @@ h1{
 }
 .filter {
     display: flex;
-    width: 90%;
+    width: 80%;
     justify-content: flex-end;
 }
 #filter-icon-down {
@@ -57,14 +59,14 @@ h1{
     display: flex;
     justify-content:center;
     align-items: center;
-    margin: 0.9rem;
+    margin: 0.3rem 0.6rem 0.9rem 0.9rem;
     width: 80%;
 }
  #input{
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 10px;  
-    padding: 0.9rem 3rem 0.9rem 0.3rem;
+    padding: 0.9rem 3rem 0.9rem 0.9rem;
     font-size: 1.2rem;
 }
 .deleteBtnInp{
@@ -74,7 +76,8 @@ h1{
    border: 1px solid #888;
   color: #888;
   cursor: pointer;
-  margin-left: -2.5rem;
+  margin-left: -2.2rem;
+  text-align: center;
 
 }
 .deleteBtnInp:hover{
@@ -104,7 +107,7 @@ h1{
 }
 #plusicon {
     width: 2.8rem;
-    height: 3.125rem;
+    height: 3.2rem;
     background-color: rgb(153,83,241);
     color: white; 
     border-radius: 50%;
@@ -120,39 +123,42 @@ h1{
     background-color: rgb(170, 113, 239);
 }
 .listcontainer{
-    width: 77%;
+    width: 80%;
     border: 1px solid #ccc;
     border-radius: 10px;  
-    font-size: 1.2rem;
+    font-size: 1rem;
     max-height: 200px; 
     overflow-y: auto;
     display: none;
+    box-sizing: border-box;
+    margin: 0 5rem 0 6.25rem;
+    padding: 0.6rem 0;
  }
 #list {
     list-style-type: none;
-    padding:0.1rem;
-    margin-top: 0.5rem;
 }
 #list li {
     border-radius: 5px;
-    padding: 0.1rem 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1.2rem;
-    
+    padding: 0.3rem 0;
 }
 #list li .item-content{
     width: 80%;
     word-break: break-all;
     text-align: left;  
+    margin-left: 0.7rem;
 }
 .delete-btn {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     border-radius:50%;
     border: 1px solid #888;
    color: #888;
    cursor: pointer; 
+   text-align: center;
+   margin-right: 0.5rem;
 }
 .delete-btn:hover{
     background-color:  rgb(131,58,224);
@@ -172,14 +178,14 @@ h1{
     }
     #input{
         font-size: 1rem;
-        padding: 0.5rem 2.3rem 0.5rem 0.5rem;
+        padding: 0.3rem 2.3rem 0.3rem 0.5rem;
           }
     .input-del-container {
         margin: 0.4rem;
     }
     .deleteBtnInp{
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1rem;
+        height: 1rem;
      }
     .add {
         padding:0.6rem 1.8rem;
@@ -192,10 +198,12 @@ h1{
     }
     #list li .item-content{
         font-size: 0.7rem;
+        margin-left: 0.5rem;
     }
     .delete-btn {
         width: 1rem;
         height: 1rem;
+        margin-right: 1rem;
     }
 
 }
@@ -229,6 +237,10 @@ h1{
         height: 1.37rem;
         font-size: 0.5rem;
     }
+    .listcontainer{
+        margin: 0 2.5rem 0 3rem;
+    }
+
     #list li .item-content{
         font-size: 0.5rem;
     }
@@ -236,7 +248,7 @@ h1{
         width: 0.8rem;
         height: 0.8rem;
         font-size: 0.5rem;
-        margin-left: 0.3rem;
+        margin-right: 0.5rem;
     }
  
 }
